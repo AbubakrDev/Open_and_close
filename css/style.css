@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+.big{
+    box-shadow: 0px 10px 10px 5px #999;
+    position: relative;
+    
+}
+
+.people{
+    background-color: blue;
+    width: 236px;
+    height: 145px;
+    position: relative;
+    z-index: 2; 
+    transition: 1s ease;
+}
+
+.people-circle{
+    background-color: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+}
+
+.circle-circle{
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 14.5%;
+    position: absolute;
+    top: 14.5%;
+}
+
+.hidden{
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 5px;
+    background-color: white;
+    box-shadow: 0px 10px 10px 5px #999;
+    transition: 1s ease;
+}
+
+.big:hover .hidden{
+    position: absolute;
+    transform: translateY(73px);
+    transition: 1s;
+    
+}
+
+.big:hover .people{
+    position: relative;
+    transform: translateY(-73px);
+    transition: 1s;
+}
